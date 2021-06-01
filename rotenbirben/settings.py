@@ -149,18 +149,18 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
      juntagrico Settings
 """
-ORGANISATION_NAME = "Rotenbirgen"
-ORGANISATION_LONG_NAME = "Rotenbirgen"
+ORGANISATION_NAME = "Rotenbirben"
+ORGANISATION_LONG_NAME = "Rotenbirben"
 ORGANISATION_ADDRESS = {"name":"Rotenbirgen", 
-            "street" : "Strasse",
-            "number" : "12",
+            "street" : "Rütistrasse",
+            "number" : "5",
             "zip" : "8906",
             "city" : "Bonstetten",
             "extra" : ""}
-ORGANISATION_BANK_CONNECTION = {"PC" : "123",
-            "IBAN" : "Ch123",
-            "BIC" : "CH",
-            "NAME" : "Bank",
+ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
+            "IBAN" : "CH22 0839 0036 4419 1000 4",
+            "BIC" : "ABSOCH22",
+            "NAME" : "Alternative Bank Schweiz AG",
             "ESR" : ""}
 SHARE_PRICE = "0"
 
