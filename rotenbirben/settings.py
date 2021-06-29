@@ -152,7 +152,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
 ORGANISATION_NAME = "Abo Rotenbirben"
 ORGANISATION_LONG_NAME = "Abo Rotenbirben"
-ORGANISATION_ADDRESS = {"name":"Rotenbirgen", 
+ORGANISATION_ADDRESS = {"name":"Rotenbirben", 
             "street" : "Rütistrasse",
             "number" : "5",
             "zip" : "8906",
