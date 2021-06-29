@@ -150,8 +150,8 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 """
      juntagrico Settings
 """
-ORGANISATION_NAME = "Rotenbirben"
-ORGANISATION_LONG_NAME = "Rotenbirben"
+ORGANISATION_NAME = "Abo Rotenbirben"
+ORGANISATION_LONG_NAME = "Abo Rotenbirben"
 ORGANISATION_ADDRESS = {"name":"Rotenbirgen", 
             "street" : "Rütistrasse",
             "number" : "5",
