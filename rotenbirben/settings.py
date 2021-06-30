@@ -167,7 +167,7 @@ SHARE_PRICE = "0"
 
 INFO_EMAIL = "abo@rotenbirben.ch"
 SERVER_URL = "www.rotenbirben.ch"
-ADMINPORTAL_NAME = "Juntagrico@rotenbirben"
+ADMINPORTAL_NAME = "Juntagrico@Rotenbirben"
 ADMINPORTAL_SERVER_URL = "abo.rotenbirben.ch"
 STYLE_SHEET = "/static/rotenbirben/css/customize.css"
 
