@@ -173,3 +173,4 @@ STYLE_SHEET = "/static/rotenbirben/css/customize.css"
 
 SE_TZ = True
 TIME_ZONE = 'Europe/Zurich'
+BYLAWS = "https://rotenbirben.ch/wp-content/uploads/2021/03/Infoblatt-Gemu%CC%88seabo-2021.pdf"
