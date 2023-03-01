@@ -159,7 +159,7 @@ ORGANISATION_ADDRESS = {"name":"Rotenbirben",
             "city" : "Bonstetten",
             "extra" : ""}
 ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
-            "IBAN" : "CH22 0839 0036 4419 1000 4",
+            "IBAN" : "CH46 0839 0038 7497 1000 1",
             "BIC" : "ABSOCH22",
             "NAME" : "Alternative Bank Schweiz AG",
             "ESR" : ""}
