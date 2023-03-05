@@ -173,5 +173,5 @@ STYLE_SHEET = "/static/rotenbirben/css/customize.css"
 
 SE_TZ = True
 TIME_ZONE = 'Europe/Zurich'
-BYLAWS = "https://rotenbirben.ch/wp-content/uploads/2022/01/Infoblatt-Gemueseabo-2022.pdf"
+BYLAWS = "https://rotenbirben.ch/wp-content/uploads/2023/03/Infoblatt-Gemueseabo-2023.pdf"
 ENABLE_SHARES = False
