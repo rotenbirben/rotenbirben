@@ -175,3 +175,6 @@ SE_TZ = True
 TIME_ZONE = 'Europe/Zurich'
 BYLAWS = "https://rotenbirben.ch/wp-content/uploads/2023/03/Infoblatt-Gemueseabo-2023.pdf"
 ENABLE_SHARES = False
+BUSINESS_YEAR_START = {"day":20, "month":5}
+
+
