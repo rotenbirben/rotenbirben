@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'adminsortable2',
     'rotenbirben',
+    'polymorphic',
 ]
 
 ROOT_URLCONF = 'rotenbirben.urls'
@@ -100,6 +101,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'impersonate.middleware.ImpersonateMiddleware'
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -110,6 +112,8 @@ EMAIL_USE_TLS = os.environ.get('JUNTAGRICO_EMAIL_TLS', 'False')=='True'
 EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 WHITELIST_EMAILS = []
 
@@ -167,9 +171,7 @@ SHARE_PRICE = "0"
 
 INFO_EMAIL = "abo@rotenbirben.ch"
 SERVER_URL = "www.rotenbirben.ch"
-ADMINPORTAL_NAME = "Juntagrico@Rotenbirben"
-ADMINPORTAL_SERVER_URL = "abo.rotenbirben.ch"
-STYLE_SHEET = "/static/rotenbirben/css/customize.css"
+STYLES = {'static': ['rotenbirben/css/customize.css']}
 
 SE_TZ = True
 TIME_ZONE = 'Europe/Zurich'
