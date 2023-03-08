@@ -171,7 +171,7 @@ SHARE_PRICE = "0"
 
 INFO_EMAIL = "abo@rotenbirben.ch"
 SERVER_URL = "www.rotenbirben.ch"
-STYLES = {'static': ['/static/rotenbirben/css/customize.css']}
+STYLES = {'static': ['/rotenbirben/css/customize.css']}
 
 SE_TZ = True
 TIME_ZONE = 'Europe/Zurich'
