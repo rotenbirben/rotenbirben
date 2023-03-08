@@ -18,8 +18,8 @@ from django.contrib import admin
 import juntagrico
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('juntagrico.urls')),
-    url(r'^$', juntagrico.views.home),
-    url(r'^impersonate/', include('impersonate.urls')),
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^', include('juntagrico.urls')),
+    re_path(r'^$', juntagrico.views.home),
+    re_path(r'^impersonate/', include('impersonate.urls')),
 ]
