@@ -13,11 +13,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import include
-from django.urls import re_path
+from django.urls import re_path, path
 from django.contrib import admin
 import juntagrico
 
+from rotenbirben.views import cs_select_subscription
+
 urlpatterns = [
+    path('my/create/subscription/', cs_select_subscription, name='cs-subscription'),
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^', include('juntagrico.urls')),
     re_path(r'^$', juntagrico.views.home),
