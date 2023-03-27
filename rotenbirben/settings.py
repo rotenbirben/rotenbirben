@@ -179,4 +179,6 @@ BYLAWS = "https://rotenbirben.ch/wp-content/uploads/2023/03/Infoblatt-Gemueseabo
 ENABLE_SHARES = False
 BUSINESS_YEAR_START = {"day":20, "month":5}
 
+DEFAULT_FROM_EMAIL = 'abo@rotenbirben.ch'
+
 
