@@ -27,13 +27,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'rotenbirben',
     'juntagrico',
+    'fontawesomefree',  # benötigt ab 1.6
+    'import_export',  # benötigt ab 1.6
     'impersonate',
     'crispy_forms',
     'adminsortable2',
-    'rotenbirben',
     'polymorphic',
 ]
+
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view'
 
 ROOT_URLCONF = 'rotenbirben.urls'
 
@@ -113,7 +117,14 @@ EMAIL_USE_SSL = os.environ.get('JUNTAGRICO_EMAIL_SSL', 'False')=='True'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
+    },
+}
 
 WHITELIST_EMAILS = []
 
@@ -137,7 +148,7 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+LOGIN_REDIRECT_URL = "/"
 
 """
     File & Storage Settings
@@ -169,8 +180,14 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "46-110-7",
             "ESR" : ""}
 SHARE_PRICE = "0"
 
-INFO_EMAIL = "abo@rotenbirben.ch"
-SERVER_URL = "www.rotenbirben.ch"
+CONTACTS = {
+    "general": "abo@rotenbirben.ch"
+}
+
+ORGANISATION_WEBSITE = {
+    'name': "www.rotenbirben.ch",
+    'url': "https://www.rotenbirben.ch"
+}
 STYLES = {'static': ['rotenbirben/css/customize.css']}
 
 SE_TZ = True
